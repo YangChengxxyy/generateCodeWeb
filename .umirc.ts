@@ -7,12 +7,18 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: {
-    title: '@umijs/max',
+    title: '@YangChengxxyy',
   },
   routes: [
     {
       path: '/',
       redirect: '/home',
+    },
+    {
+      path: '/login',
+      name: '登陆',
+      component: './Login',
+      layout: false,
     },
     {
       name: '首页',
@@ -24,12 +30,6 @@ export default defineConfig({
       path: '/access',
       component: './Access',
     },
-    {
-      name: ' CRUD 示例',
-      path: '/table',
-      component: './Table',
-    },
   ],
   npmClient: 'pnpm',
 });
-
